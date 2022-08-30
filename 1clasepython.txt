@@ -1,0 +1,56 @@
+PIL
+Full Stack Python.
+Jose Virgilio Trepat
+Octavio Gomez
+
+Obtener conocimiento minimo en python, poder
+manejar el lenguaje, ver sus principales complicaciones
+vamos de basico a mas complicado. 
+vamos a ir rapido. 
+Nota, y seguimiento en base a proyectos
+modalidad scrum
+1era clase suerte de planning
+en la proxima clase tendremos una daily.
+Clases martes y jueves, tareas con mucho desarrollo
+que se  vera en clases, y contenido que se busca en
+la web. Leer los manuales, leer manuales de frameworks
+manual de lenguaje. manual de usario. Stackoverflow
+foros.
+Vamos a aprender a como trabajar con los lenguajes
+Entre medio de clase y clase buscar soluciones
+herramientas. 
+ayudarnos entre nosotros. cuando el grupo aprende
+todos juntos y balancear sus conocimientos, se
+avanza.
+Dinamica de mundo real.
+
+Cronograma
+6 clases. la review es el 13 de septiembre(2semanas y media o 3semanas)
+
+1era clase
+entornos virtuales
+entrada y salida de datos
+variables y tipo de datos
+
+
+Introduccion
+python: es un lenguaje de programacion
+ventaja: lenguaje interpretado(no se compila, se ejecuta en tiempo real)(lo malo es que si hay error, se interrumpe)
+(otro problema es mucho mas lento)
+ventaja: tipado, muy flexible.(tan simple de escribir, pero si uno no es ordenado, se hara un codigo fideo)
+
+Entornos virtuales:
+nos permite encapsular el codigo que nosotros haremos, y va a impedir la interferencia con otros.
+Podemos utilizar diferentes manejadores _(pyem anaconda etc)
+Nosotros utilizaremos virtual em
+
+Virtual em: 
+cmd: python pip list
+git, y asociar con github. 
+Todo esto desde el cmd (promp)
+python -m venv env (comando para crear entorno)
+.\env\Scripts\activate (levantar el entorno)
+pip list
+crear git ignore
+.gitignore
+env/
