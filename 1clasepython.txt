@@ -61,3 +61,4 @@ entradas y salidas de datos
 mostrar un mensaje por consola
 print , es impresion
 (clear o cls para limpiar la terminal)
+deactivate, cerrar el entorno

@@ -1,0 +1,30 @@
+Entreda y salida de datos.
+vamos a avanzar sobre la funcion print.
+ingreso de datos.
+estructura de datos.
+variables.
+Salida de datos
+Print:
+dentro de la funcion print, se puede concatenar con alguna variable, con otro texto, entre otros.
+en python los comentarios se hacen con #
+no hace falta llenar de comentarios, siempre tienen que ser precisos
+\n es salto de linea.
+\t tabulacion.
+concatenar
+print("Esto es "+ "Mundo")
+print('hola' + ' ' + 'mundo')
+sep ='' funcion de print.
+con sep -> print('hola','mundo', sep=' ')entre las comillas
+del sep ira lo que estaria entre los string
+funcion end
+con end, se agrega algo al final de de los elementos dentro del print
+esto se usa cuando se arman archivos ccb
+las funciones print son las mas usadas.
+desde el print podemos ver lo que nos manda el front.
+
+ENTRADA DE DATOS
+funcion input.
+permite leer las entradas por teclado, a  traves de la terminal
+input('Ingrese un mensaje: ')
+esto devuelve un tipo de dato en particular. 
+funcion interna en python: type
