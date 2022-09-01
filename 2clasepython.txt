@@ -28,3 +28,22 @@ permite leer las entradas por teclado, a  traves de la terminal
 input('Ingrese un mensaje: ')
 esto devuelve un tipo de dato en particular. 
 funcion interna en python: type
+
+Variables
+
+Variable nos permite guardar informacion en la memoria de
+la maquina.
+usaremos el espacio de la memoria para almacenar algo.
+autoexplicativa, tratar de nombrarla de forma acorde para lo
+que lo estamos usando.
+en python la asignacion es =
+input siempre devuelve tipo string.
+alt ctrl flechita para abajo bajar cursor genera mas cursores
+shift alt flecha para abajo: copia
+snipeds
+type-> nos permite saber el tipo de datos que estamos trabajando
+string * int = repite tantas veces el int
+tratar de que las variables sean minusculas.
+las mayusculas llaman a clases.
+
+Tipo de datos:
