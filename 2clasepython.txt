@@ -46,4 +46,47 @@ string * int = repite tantas veces el int
 tratar de que las variables sean minusculas.
 las mayusculas llaman a clases.
 
+
 Tipo de datos:
+int, boolean, float, str, list, tiple, 
+indice [] es la posicion que ocupa. el primer elemento siempre
+es 0(cero)
+[0:hasta donde]
+indice negativo empieza de atras para adelante en -1
+Metodos:
+.
+lower(): devuelve cadena en minuscula
+upper(): devuelve cadena en mayusculas
+split(): devuelve una lista
+
+Listas:
+lista = ['elemento 1', 2, 'elemento3']
+permite almacenar cualquier tipo de letra.
+las listas permiten mantener el tipo de dato.
+se puede acceder a indices.
+puede cambiar
+
+Metodo
+append = agregar al ultimo
+index = nos devuelve el indice del elemento que querramosprint(lista_1.index(('a', 'b')))
+insert = agregar elemento por el indice (indice, elemento)
+
+
+Tupla: no se puede cambiar 
+para cambiar tenemos que sobreescribir.
+inmutable.
+
+Diccionario: estructura de datos, que permite manejarlos 
+a traves de una llave valor. {}
+las llaves tienen que ser string.
+print(xxxxxx[nombre_en_diccionario]
+
+Metodo
+.get devuelve lo seleccionado.
+tiene dos despues de la , es por si no encuentra. (Else)
+.keys devuelve todas las keys, devuelve en lista.
+# Metodo de diccionario
+print(usuario.get('puesto', 'No encontrado')) #GET
+keys_usuario = list(usuario.keys()) #KEYS
+print(type(keys_usuario))
+print(usuario.get(keys_usuario[0]))
