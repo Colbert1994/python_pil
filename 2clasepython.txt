@@ -90,3 +90,21 @@ print(usuario.get('puesto', 'No encontrado')) #GET
 keys_usuario = list(usuario.keys()) #KEYS
 print(type(keys_usuario))
 print(usuario.get(keys_usuario[0]))
+values.
+
+ejercicios. hacerlos
+*mostrar variables, y sus valores
+*dibujar en la consola de python.
+*programa: que lea 4 palabras(ingresadas por el usuario)
+calcule la longitud de cada una de ellas y las despliegue con su
+longitud indicada con asteriscos.
+ej: Arbol *****
+tiene que mostrar la palabra ingresada y la cantidad de caracteres
+Uno -> ***
+*crear un diccionario del ejercicio anterior.
+
+key va a ser la palabra y el value seran los asteriscos
+agregar con numero las cantidades. 
+
+para la clase que v iene. estructuras de control
+condicionales y bucles.
