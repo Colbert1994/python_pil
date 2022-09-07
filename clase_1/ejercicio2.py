@@ -8,7 +8,7 @@ b = int(input('Ingrese el segundo número: '))
 lista1 = []
 
 # Ciclo for para guardar los numeros pares dentro del rango
-for i in range(a, b+1):
+for i in range(a, b-1):
     # Operacion para averiguar si es par
     par = i % 2
     # Comparacion para agregar
