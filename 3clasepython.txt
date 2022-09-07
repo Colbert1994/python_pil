@@ -1,0 +1,39 @@
+3era clase backend python.
+hoy vemos: 
+estructuras de control.
+condicionales en python.
+
+condicionales en python: 
+todo sistema o todos los lenguajes, ejecutan los archivos secuencialmente.
+-agrego notas en vsc.
+la lectura siemrpe es secuencial, de arriba hacia abajo.
+necesitamos que haga cierta tarea o funcion que permita controlar 
+lo que esta sucediendo.
+generar condiciones para ejecutar otra funcion
+Condicionales:
+- if (Si) (tambien lo incorpora excel) (comparo la variable con un parametro, o se puede
+comprar varible con otra variable)
+else: (si no se cumple esta condicion debe realizar esta tarea)(entra por la rama falsa)
+if: es una estructura de control, que nos permite realizar determinadas acciones. permite tomar
+una decision.
+(si pasa esto, o si se cumple esta condicion ejecutamos esto)
+
+Anidar if se puede hacer.
+
+Logicos: and (&) or (||)(uno de todas las condicion tiene que ser verdadera para devolver true)
+elif: comprobar bastantes condicionales en el mismo.
+dif entre if y elif: te permite ahorrar un par de lineas de codigo.
+elif = muy entre comillas " switch" como en java. 
+
+Bucles, permiten iterar 
+tenemos 2 bucles, for y while
+la principal diferencia es la cantidad de veces que quiero que se ejecute.
+for yo digo la cantidad podemos definir la cantidad de vueltas que quiero que de.
+while. se ejecuta hasta que le diga basta(mientras que)
+bucle es repetir una porcion de codigo. 
+
+
+For i in range: definimos el rango de operacion
+
+break: corta el bucle.
+while necesita una condicion para parar. o rompe todo.
