@@ -1,0 +1,43 @@
+Funciones y Modulos. 
+
+Funcion: es un bloque de codigo que puede ser invocado las veces que lo necesitemos.
+es un bloque de codigo, podemos programar ese bloque de codigo para que realice determinadas tareas
+y poder llamarlo cada que lo necesitemos.
+estructura basica:
+una funcion tiene elemntos
+Nombre: nombre unico y autodescriptivo
+argumentos:  va entre parentesis
+codigo: bloque de accion que queremos que haga
+retorno: el resultado de la funcion
+tenemos que utilizar la palabra reservada "def"
+ej: def sumar (a, b):
+	resultado = a + b (codigo)
+	return resultado (retorno)
+invocamos llamando a la funcion
+sumar(2, 3)
+para mostrar print(sumar(2,3))
+
+otro tipo de funcion
+Funcion sin parametros
+operacion completamente independiente
+ej: def resta():
+	resultado = 2 - 3
+	return resultado
+funcion sin retorno
+ej def resta_2():
+	print (2-3)
+la invocamos resta_2()
+
+Parametros posicional: en orden en el que se piden
+parametro igualativo? : prueba(b = b, c= c, a = a)
+
+las librerias generan funciones o clases, que estan guardadas en un archivo
+y a medida que lo necesite la llamo o invoco.
+"""""" vsc enter
+
+
+pip es un manejador de paquetes, permite descargar eliminar modulos.
+cmd
+pip list  muestra la lista
+pip install pandas
+pypip.org(pagina que nos permite buscar el paquete que queramos)

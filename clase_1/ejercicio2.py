@@ -18,4 +18,3 @@ for i in range(a, b-1):
 # Mostramos en pantalla la lista
 print(lista1)
 
-    
