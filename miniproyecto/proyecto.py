@@ -14,37 +14,38 @@
 # cuando hacer cambio de aceite y filtro cada 15k km.
 
 # Funciones necesarias
-def patente():
+def patente_ingresada(nueva_patente):
     """ Almacena la patente del auto
 
     Returns:
         string: recibe por teclado la patente del auto
     """
-    patente = input('Ingrese patente del auto: ')
-    return patente
+    patente_nuevo_cliente = nueva_patente
+    return patente_nuevo_cliente
 
-def verificar_cliente(patente_cliente):
+def verificar_cliente(patente_nuevo_cliente):
     """verifiar si la patente ingresada esta asociada a un cliente existente
 
     Args:
         patente_cliente (string): compara solo las patentes para saber si es cliente.
     """
-    patente = 'JKI203'
-    km = 1000
-    fecha_ultimo_service = '12 agosto 2022'
-    modelo = 'Peugot 208'
-    año = 2010
-    marca_aceite_filtro = 'Marca ejemplo'
     cliente_existente = {
-        'patente': patente,
-        'K.M': km,
-        'Fecha de ultimo service': fecha_ultimo_service,
-        'Modelo': modelo,
-        'Año': año,
-        'Marca de aceite y filtro utilizado': marca_aceite_filtro
+        'Patente_registrada': 'JKI203',
+        'K.M': 1000,
+        'Fecha de ultimo service': '10-08-2022',
+        'Modelo': 'Peugot 206',
+        'Año': 2010,
+        'Marca de aceite y filtro utilizado': 'Marca Ejemplo'
     }
-    if patente_cliente == cliente_existente[patente]: #revisar por que no hace lo que tiene que hacer
+    patente_existente = cliente_existente['Patente_registrada']
+    if patente_nuevo_cliente == patente_existente: #revisar por que no hace lo que tiene que hacer
+        flag = True
         print('Es un cliente existente')
+        print('A continuaciçon le detallamos un resumen')
+        print(cliente_existente)
+    else: 
+        print('Cliente nuevo.')
+        nuevo_cliente()
     return cliente_existente
 
 def nuevo_cliente():
@@ -65,6 +66,7 @@ def nuevo_cliente():
     modelo = input('Ingrese el modelo del auto y el año: ')
     servicio = input('Ingrese el servicio que se realizo: ')
     nuevo_auto.append(patente, km, ultimo_service, modelo, servicio)
+    calcular_proximo_serv(nuevo_auto=km)
     return nuevo_auto
 
 def calcular_proximo_serv(nuevo_auto):
@@ -88,12 +90,14 @@ def ingreso():
 # Programa main 
 
 print('Bienvenido')
-cliente = input('Ingrese la matricula del auto: ')
-verificar_cliente(cliente)
-if verificar_cliente == True:
-    print('Cliente existente')
-else:
-    ingreso()
-    nuevo_cliente()
-    calcular_proximo_serv(nuevo_cliente)
+nuevo_ingres = patente_ingresada(input('Ingrese la patente del auto: '))
+verificar_cliente(nuevo_ingres)
+calcular_proximo_serv()
+
+
+        
     
+
+
+
+
