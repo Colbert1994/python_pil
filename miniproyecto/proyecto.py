@@ -38,15 +38,15 @@ def verificar_cliente(patente_nuevo_cliente):
         'Marca de aceite y filtro utilizado': 'Marca Ejemplo'
     }
     patente_existente = cliente_existente['Patente_registrada']
-    if patente_nuevo_cliente == patente_existente: #revisar por que no hace lo que tiene que hacer
-        flag = True
+    if patente_nuevo_cliente == patente_existente:
         print('Es un cliente existente')
         print('A continuaciçon le detallamos un resumen')
         print(cliente_existente)
+        
     else: 
         print('Cliente nuevo.')
         nuevo_cliente()
-    return cliente_existente
+    return cliente_existente, 
 
 def nuevo_cliente():
     """nuevo cliente: toma los datos del nuevo cliente
@@ -59,14 +59,19 @@ def nuevo_cliente():
         servicio: string
         nuevo_auto: list
     """
-    nuevo_auto = []
+    nuevo_auto = {}
     patente = input('Ingrese la patente del vehiculo: ')
     km = int(input('Ingrese el kilometraje del vehiculo: '))
     ultimo_service = input('Ingrese la ultima fecha de service en formato dd/mm/aa: ')
     modelo = input('Ingrese el modelo del auto y el año: ')
     servicio = input('Ingrese el servicio que se realizo: ')
-    nuevo_auto.append(patente, km, ultimo_service, modelo, servicio)
-    calcular_proximo_serv(nuevo_auto=km)
+    nuevo_auto = {
+        'Patente:': patente,
+        'Km: ': km,
+        'Fecha de ultimo service: ':ultimo_service,
+        'Modelo: ': modelo,
+        'Marca de aceite y filtro utilzado: ': servicio
+    }
     return nuevo_auto
 
 def calcular_proximo_serv(nuevo_auto):
@@ -78,7 +83,7 @@ def calcular_proximo_serv(nuevo_auto):
         
     """
     nuevo_service = nuevo_auto.km + 15000
-    return print('El proximo servicio es a los : ',nuevo_service,'km.') # no recuerdo si tenia que retornar o printear
+    print('El proximo servicio es a los : ',nuevo_service,'km.') # no recuerdo si tenia que retornar o printear
 
 def ingreso():
     print('Bienvenido: ')
@@ -92,7 +97,7 @@ def ingreso():
 print('Bienvenido')
 nuevo_ingres = patente_ingresada(input('Ingrese la patente del auto: '))
 verificar_cliente(nuevo_ingres)
-calcular_proximo_serv()
+
 
 
         
