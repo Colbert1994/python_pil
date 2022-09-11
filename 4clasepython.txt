@@ -41,3 +41,6 @@ cmd
 pip list  muestra la lista
 pip install pandas
 pypip.org(pagina que nos permite buscar el paquete que queramos)
+
+crear requirements
+pip freeze > requirements.txt (captura de lo que nosotros tengamos en ese momento)
