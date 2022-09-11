@@ -46,7 +46,7 @@ def verificar_cliente(patente_nuevo_cliente):
     else: 
         print('Cliente nuevo.')
         nuevo_cliente()
-    return cliente_existente, 
+    return cliente_existente 
 
 def nuevo_cliente():
     """nuevo cliente: toma los datos del nuevo cliente
