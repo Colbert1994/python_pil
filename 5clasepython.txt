@@ -1,0 +1,86 @@
+Programacion orientada a objetos
+es un cambio de paradigma que nos permite, crear entidades que podemos reutilizar. podemos atribuirles
+funcionalidades. (modelar)
+Clase: es una plantilla. podemos utilizarla para definir o modelar nuestros objetos. al mismo tiempo
+ver cuales son sus peculialirades, y valores
+class se pueden definir en mayusculas la primer letra
+pass: obvia todo lo que esta por adentro. con el pass ignora todo y seguimos.
+Primera clase
+class Perro:
+      pass
+te sirve para hacer una mejor estructura, hacer un codigo mas legible. mas limpio.
+es mas importante para la parte del backend.
+en el backend de un gran sistema, todo se genera en clases.
+todo se encapsula en clases. 
+atributos de un objeto. ademas de tener atributos. necesitamos que haga acciones.(funciones)
+que pertenezcan a un solo objeto. (clases)
+(vamos a ver Reac generamos clases para generar momentos)
+la clase es la representacion de ese objeto. es objeto tiene atributos(variables funciona dentro de ese objeto) 
+y funciones(estan encapsuladas dentro de esa clase)
+(cuando veamos base de datos terminara de cerrar para ver como interactuan entre otras cosas)
+instanciar o abstraernos con una plantilla para facilitar.
+ej de inicializar.
+perro_1 = Perro()
+
+class Perro:
+# Atributo
+    def __init__(self, nombre, raza):
+lo anterior es un constructor(
+self: es un parametro que quiere decir " a mi mismo" queremos construir un objeto que se va a 
+instanciar asi mismo. (this) lo autollama. es un metodo para crear e inicializar el objeto.
+permite que cuando instancie el objeto, le determino cuales son las variables y atributos necesarias
+para generarse dentro de la memoria. (estos se encapsulan en memoria)
+con esto le decimos como debe ser el perro.
+luego:
+self.nombre = nombre
+self.raza = raza
+tenemos que pasarle nuestros argumentos.
+para acceder usamos el "." en este caso perro1.raza (por ejemplo)
+son atributos de instancia. tenemos otro tipo de atributo, de clase.
+atributos de instancia son variables locales, porque son las peculiaridades propio y unico de 
+el objeto.
+
+Atributo de clase: serian las variables globales de la clase
+va a ser comun a todas las clases. a fuerza. por ejemplo: "especie"
+
+Metodos son las acciones que nosotros le vamos a definir a nuestro objeto. (lo que es capaz de hacer)
+
+def ladrar(self):
+        print('Guau') solo accion
+    def jugar(self, objeto):
+        print('El perroesta jugando con ', objeto) pido un objeto
+    def saludar(self):
+        print('Guau, mi nombre es ', self.nombre) uso un atributo
+perro_1.ladrar()
+perro_1.jugar('Pelota')
+perro_1.saludar()
+la funcion init es nuestro constructor, es nuestro iniciador. son los parametros que van a tener
+nuestro objeto.
+en nuestro caso, nombre y raza, todos los perros van a tener. 
+el objeto dentro de si mismo tiene un nombre y una raza.
+cuando instancio dentro de las acciones son acciones propias de la clase.
+podemos instanciar con parametros definidos, o instanciarlos despues.
+todo se define a nivel logica. 
+Herencia
+nos permite trabajar con el concepto de la abstraccion del objeto
+podemos crear una capa superior que seria la capa minima de la clase.
+ej: clase usuario.
+la clase padre seria la clase persona y en esa clase podemos empezar a atribuirle
+para que perro herede tenemos que abrir parentesis y escribir la clase animal
+super().__init__(especie, edad)
+el super nos permite ir a la clase padre, y trabajar con sus propios metodos desde la clase hija.
+
+Ejercicio programacion orientada a objetos
+Tipo MOBA (LOL DOTA CSGO DIABLO)
+Programa que permita al usuario crear un persona. va a tener que tener 2 clases. una clase padre 
+y una hija. en donde el personaje pueda tener diferentes roles. (terroristas o counters)
+tipo lol(top mid adc jg supp)
+una clase personaje, para definir sus atributos y metodos
+crear varias clases hijas de acuerdo al tipo de personaje que quieran usar.
+Crear una clase padre y una clase hijo. de un personaje con todos sus atributos.
+recordar las funciones que tienen los personajes.  acciones
+crear 2 personajes, que tengan vida, que esos personajes se peleen que haya una batalla 
+uno de esos metodos que sea atacar. (movimientos super efectivo, efectivo, etc)
+que tenga una funcion o metodo que tenga atacar, que tenga un valor de daño
+podemos usar una funcion random o randint. 
+una clase padre, una clase hijo que hereden que tenga propiedades algunas y tengan funciones.
