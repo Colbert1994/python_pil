@@ -25,7 +25,6 @@
 
 # vamos a usar esto para los ataques, criticos, etc
 import random
-from traceback import print_tb
 
 # Clase Padre
 class Personajes:
@@ -34,7 +33,7 @@ class Personajes:
         self.vida = vida
         self.daño = daño
 
-# Clase Hija
+# Clase Hijo
 class Jugador(Personajes):
     def __init__(self, elemento, vida, daño, energia):
         super().__init__(elemento, vida, daño)
@@ -43,39 +42,76 @@ class Jugador(Personajes):
         
     # Metodos
     
-        
-    
     def ataque1(self):
         self.total_atk = self.daño + random.randrange(0, 10)
         print('El ataque fue de: ',self.total_atk)
         return self.total_atk
     def energia1(self):
         self.total_energy = self.energia - 20
-        print(self.total_energy)
+        
         return self.total_energy
+    def efectividad():
+        
+        print('Ataque muy efectivo!')
+    
+    def no_efectivo():
+        print('El ataque no fue efectivo')
         
         
         
-        
-elemento = 'Agua'
+       
+elementos = ['Agua', 'Tierra', 'Fuego']
+elemento1 = random.choice(elementos)
 vida = 100
 daño = 40
 energia = 100
 
-j1 = Jugador(elemento, vida, daño, energia)
+j1 = Jugador(elemento1, vida, daño, energia)
 print(j1.elemento, j1.vida, j1.daño, j1.energia)
-atk = j1.ataque1()
-nrg = j1.energia1()
-vida_restantej2 = vida - atk
-print(nrg)
+atk1 = j1.ataque1()
+nrg1 = j1.energia1()
+vida_restantej2 = vida - atk1
+
 print('vida jugador2: ', vida_restantej2)
-print('El jugador 1 tiene: ',nrg, 'de energia.')
+print('El jugador 1 tiene: ',nrg1, 'de energia.')
 print('-------------------------------------------------------------------------------------------------------')
-j2 = Jugador(elemento, vida, daño, energia)
+elemento2 = random.choice(elementos)
+j2 = Jugador(elemento2, vida, daño, energia)
 print(j2.elemento, j2.vida, j2.daño, j2.energia)
-atk = j2.ataque1()
-nrg = j2.energia1()
-vida_restantej2 = vida - atk
-print(nrg)
-print('vida jugador1: ', vida_restantej2)
-print('El jugador 2 tiene: ',nrg, 'de energia.')
+atk2 = j2.ataque1()
+nrg2 = j2.energia1()
+vida_restantej1 = vida - atk2
+
+print('vida jugador1: ', vida_restantej1)
+print('El jugador 2 tiene: ',nrg2, 'de energia.')
+print('-------------------------------------------------------------------------------------------------------')
+
+print('-------------------------------------------------------------------------------------------------------')
+
+"""
+if elemento1 == 'Agua' and elemento2 == 'Fuego':
+    atk1 = atk1 * 0.5
+    vida_restantej2 = vida_restantej2 - atk1
+
+    
+elif elemento1 == 'Fuego' and elemento2 == 'Tierra':
+    atk1 = atk1 * 0.5
+    vida_restantej2 = vida_restantej2 - atk1
+    
+elif elemento1 == 'Tiera' and elemento2 == 'Agua':
+    atk1 = atk1 * 0.5
+    vida_restantej2 = vida_restantej2 - atk1
+elif elemento1 == 'Tiera' and elemento2 == 'Agua':
+    atk1 = atk1 * 0.5
+    vida_restantej2 = vida_restantej2 - atk1
+elif elemento1 == elemento2:
+    print('Son del mismo elemento')
+    
+    
+else:
+    atk2 = atk2 * 0.5
+    vida_restantej1 = vida_restantej1 - atk2
+    
+
+print('Ataque del jugador 1: ', atk1, 'le quedan: ',vida_restantej2, 'pts de vida')
+print('Ataque del jugador 2: ', atk2, 'le quedan: ',vida_restantej1, 'pts de vida')"""
